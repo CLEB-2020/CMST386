@@ -1,0 +1,15 @@
+$myFont: Arial;
+$myColor: yellow;
+$myFontSize: 24px;
+$myWidth: 680px;
+
+body {
+  font-family: $myFont;
+  font-size: $myFontSize;
+  color: $myColor;
+}
+
+#container {
+  width: $myWidth;
+}
+

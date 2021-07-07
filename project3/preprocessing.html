@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Project 3</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CSS Preprocessing">
+  <meta name="keywords" content="CSS, Responsive, Preprocessing, LESS, SASS">
+  <link rel="stylesheet" href="project3.css">
+  </head>
+
+<body>
+
+<ul class="topnav">
+        <li><a class="active" href="../project1/index.html">Home</a></li>
+        <li><a href="project3.html">Project 3</a></li>
+        <li><a href="preprocessing.html">Preprocessing</a></li>
+    </ul>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    
+
+<div class="row">
+        <div class="side">
+          <h2>SASS/LASS</h2>
+          <button class="button button 1"><a href="https://www.lambdatest.com/blog/css-preprocessors-sass-vs-less-vs-stylus-with-examples/">More information</a></button>
+        </div>
+        <div class="main">
+            <h2>Ways to implement preprocessing</h2>
+            <p>Websites can implement preprocessing in two ways. The website can run scripts in one of two places which are the client side or the server side. Most web coding languages are designed to run on either the server side or the client side. This largely defines how they work. Here are some examples.</p>
+            <h3>Client Side Preprocessing</h3>
+            <p>Client side development is done mostly in JavaScript. JavaScript is ran in addition to basic HTML and CSS
+                code. The reason JavaScript is consider a client side preprocessor is because it runs scripts on the computer after the webpage has
+                loaded.</p>
+            <h3>Server Side Preprocessing</h3>
+            <p>A server side preprocessor runs its scripts before the HTML is loaded.There are various server side languages available. PHP and Ruby are the most popular server side preprocessors
+                but there are many others. The server side preprocessors run their scripts on the server which hosts the website and sends down the HTML code.</p>
+            <h2>Mechanisms used in either LESS or SASS</h2>
+            <p>SASS is an extension of CSS that adds power and elegance to the basic language. SASS acts as a meta-language, to
+            improve CSS’ syntax in order to provide extra features and handy tools. Also, SASS wants to be conservative
+            regarding the CSS language. The point of SASS is to help where CSS fails. SASS use mixins and mixins
+            are one of the most popular features fromthe Sass language. They are the key to reusability and DRY components. Mixins allow authors to define styles that can be
+            reused throughout the stylesheet without needing to resort to non-semantic classes such as .float-left.They can contain full CSS rules and pretty much everything that is allowed anywhere in a Sass document. They can even
+            take arguments, just like functions. Needless to say, the possibilities are endless.</p>
+        <!-- How I implemented SASS: I used visual code studio to build a stylesheet using sass. I used the scout-app to convert the sass file to a .css files. This application allows me to set up my project in such a way  where I can have the stylesheet setup in a streamline fashion. I took advantage of sass variables for setting up the colors and font style within the stylesheet. -->
+        <a href="../project3/scssex.scss">SASS file</a>
+        </div>
+      </div> 
+<button onclick="topFunction()" id="myBtn" title="Go to top">Back to the Top</button>
+<script>
+      //Get the button:
+      mybutton = document.getElementById("myBtn");
+      
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      } 
+      </script>  
+      
+<footer>Created by Cheree Edwards CMST386 2021
+ </footer>    
+
+</body>
+
+</html>

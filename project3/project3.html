@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Project 3</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="project3">
+  <meta name="keywords" content="CSS, Responsive, Preprocessing, LESS, SASS">
+  <link rel="stylesheet" href="project3.css">
+  </head>
+
+<body>
+
+<ul class="topnav">
+        <li><a class="active" href="../project1/index.html">Home</a></li>
+        <li><a href="project3.html">Project 3</a></li>
+        <li><a href="preprocessing.html">Preprocessing</a></li>
+    </ul> 
+<div class="row">
+        <div class="side">
+          <h2>Learn More</h2>
+          <button class="button button 1"><a href="preprocessing.html">Preprocessing</a></button>
+        </div>
+        <div class="main">
+            <h2>Responsive Design</h2>
+            <p>With the rise of mobile devices, it is important to create and maintaian a website that can adapt to various
+                types of
+                devices. One way to adapt to various devices would be to use a responsive website design. A responsive website
+                is a
+                website that is designed to adapt to the size of the screen it is being viewed on. With many end users using
+                various
+                types of devices it is more advantagous to design a website that responds and adjusts to mobile and other
+                devices.</p>
+            <h2>Google Analytics Report</h2>
+            <p>Google Analytics Reports allow marketers to use a strategic method to capture a consumer when they are in the
+                “ready
+                to buy micro-moment stage also known as the purchasing funnel. A basic purchasing funnel includes:
+            <ul>
+                <li>Building awareness and obtaining user interest</li>
+                <li>Behavior is measured when a user engages with your business</li>
+                <li>Conversion is when a user becomes a customer and transacts with your business</li>
+            </ul>        
+            <h3>Audience Report</h3>
+            <p>The Audience report includes data related to demographics, interests, language, user behavior,
+                and the type of device used to interact with the website. The audience report helps businesses better understand
+                the characteristics of their visitors. </p>
+            <h3>Acquisition Report</h3>
+            <p>The Acquisition report provides businesses the data to compare the performance of different marketing channels
+                such as organic, paid,
+                direct, referral, and display and discover which sources bring in the most quality traffic and conversions.
+            </p>
+            <h3>Behavior Report</h3>
+            <p>The Behavior report helps businesses review the performance of their site. It gives companies data related to
+                page
+                views, unique page views, average time spent on each page, bounce rate, and exit rate. The report can also show
+                how the
+                content is performing by page URLs, titles, search terms, or events.</p>
+          </div>
+      </div> 
+<button onclick="topFunction()" id="myBtn" title="Go to top">Back to the Top</button>
+<script>
+//Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+} 
+</script>   
+<footer>Created by Cheree Edwards CMST386 2021
+ </footer>    
+
+</body>
+
+</html>
