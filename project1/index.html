@@ -19,11 +19,46 @@
     <ul>
       <li><a href="home.html">Project 1</a></li>
       <li><a href="../project2/index2.html">Project 2</a></li>
-      <li><a href="#project3">Project 3</a></li>
-      <li><a href="#project4">Project 4</a></li>
+      <li><a href="../project3/project3.html">Project 3</a></li>
+      <li><a href="../project4/home.html">Project 4</a></li>
     </ul>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
   </nav>
-
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Back to the Top</button>
+  <script>
+  //Get the button:
+  mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  } 
+  </script>  
+  
+  <script>/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+  </script>
 <footer>Created by Cheree Edwards CMST386 2021
 </footer>
 </body>
